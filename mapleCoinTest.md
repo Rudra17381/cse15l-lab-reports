@@ -143,6 +143,6 @@ class Miner(Network):
         self.mine()
 ```
 
-## An image of Gisel library cus why not
+## An image of Geisel Library cus why not
 ---
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)
