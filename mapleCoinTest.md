@@ -1,6 +1,8 @@
 # Maple coin, [original site link](https://maple-coin.com)
 ---
+
 Note: The entire original site is designed by me and I am the sole owner of it which is why I am using its content here and replicating its homepage to create this markdown file.
+
 ---
 Maple Coin is an innovative perspective on currency. It is a fully digital currency developed entirely from scratch by a high school student. It is a cryptocurrency that relies on blockchain technology based on decentralized consensus, making it safer than every physical currency currently in existence. This revolutionary technology is the future of currencies; Be a fundamental part of this future by participating in the Maple Coin Network today
 
