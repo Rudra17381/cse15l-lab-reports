@@ -145,4 +145,4 @@ class Miner(Network):
 
 ## An image of Gisel library cus why not
 ---
-![Image](https://images.app.goo.gl/5Hco6X5uPCkH7JoF7)
+![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)
