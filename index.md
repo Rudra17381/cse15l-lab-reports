@@ -1,5 +1,3 @@
-Hello World!
-
 ## All links in the repository:
 ---
 * [index.md](https://github.com/Rudra17381/cse15l-lab-reports/blob/bde8668c0f862a5ce06d42d6400f30d221102e37/index.md)
