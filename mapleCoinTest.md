@@ -1,4 +1,4 @@
-# Maple coin, original site = [Link](https://maple-coin.com)
+# Maple coin, [original site link](https://maple-coin.com)
 ---
 Note: The entire original site is designed by me and I am the sole owner of it which is why I am using its content here and replicating its homepage to create this markdown file.
 ---
@@ -18,13 +18,13 @@ This project is heavily inspired by Blockchain at Berkeley and the YouTube chann
 
 The following lecture materials and video are the sole sources of the foundation of this project:
 
-* [Link](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)Bitcoin Mechanics and Optimizations: A Technical Overview - Blockchain at Berkeley
-* [Link](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)Bitcoin IRL: Wallets, Mining, and More - Blockchain at Berkeley
-* [Link](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)Trust without Trust: Distributed Systems & Consensus - Blockchain at Berkeley
-* [Link](https://www.youtube.com/watch?v=bBC-nXj3Ng4&feature=youtu.be)But how does bitcoin actually work? - 3Blue1Brown
+* [Bitcoin Mechanics and Optimizations: A Technical Overview - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
+* [Bitcoin IRL: Wallets, Mining, and More - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
+* [Trust without Trust: Distributed Systems & Consensus - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
+* [But how does bitcoin actually work? - 3Blue1Brown](https://www.youtube.com/watch?v=bBC-nXj3Ng4&feature=youtu.be)
 
 ## Code
 ---
 
-> Open Source Maple Coin Mining Software: [Link](http://maple-coin.com/mining)
-> Open Source Maple Coin Network Code: [Link](http://maple-coin.com/sourceCode)
+> Open Source Maple Coin Mining Software: [Mining Software](http://maple-coin.com/mining)
+> Open Source Maple Coin Network Code: [Source Code](http://maple-coin.com/sourceCode)
