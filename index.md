@@ -4,6 +4,9 @@
 * [lab-report-1-week-2](https://rudra17381.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 * [mapleCoinTest](https://rudra17381.github.io/cse15l-lab-reports/mapleCoinTest.html)
 
+* [index test link 1](lab-report-1-week-2.html)
+* [index test link 2](https://<your-username>.github.io/<your-lab-reports-repo>/lab-report-1-week-2.html)
+
 ## All links in the repository:
 ---
 * [index.md](https://github.com/Rudra17381/cse15l-lab-reports/blob/bde8668c0f862a5ce06d42d6400f30d221102e37/index.md)
