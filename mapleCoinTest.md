@@ -18,13 +18,13 @@ This project is heavily inspired by Blockchain at Berkeley and the YouTube chann
 
 The following lecture materials and video are the sole sources of the foundation of this project:
 
-* [Bitcoin Mechanics and Optimizations: A Technical Overview - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
-* [Bitcoin IRL: Wallets, Mining, and More - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
-* [Trust without Trust: Distributed Systems & Consensus - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
-* [But how does bitcoin actually work? - 3Blue1Brown](https://www.youtube.com/watch?v=bBC-nXj3Ng4&feature=youtu.be)
+1. [Bitcoin Mechanics and Optimizations: A Technical Overview - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
+2. [Bitcoin IRL: Wallets, Mining, and More - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
+3. [Trust without Trust: Distributed Systems & Consensus - Blockchain at Berkeley](https://blockchain.berkeley.edu/courses/spring-2020-fundamentals-decal/)
+4. [But how does bitcoin actually work? - 3Blue1Brown](https://www.youtube.com/watch?v=bBC-nXj3Ng4&feature=youtu.be)
 
 ## Code
 ---
 
-> Open Source Maple Coin Mining Software: [Mining Software](http://maple-coin.com/mining)
-> Open Source Maple Coin Network Code: [Source Code](http://maple-coin.com/sourceCode)
+> * Open Source Maple Coin Mining Software: [Mining Software](http://maple-coin.com/mining)
+> * Open Source Maple Coin Network Code: [Source Code](http://maple-coin.com/sourceCode)
