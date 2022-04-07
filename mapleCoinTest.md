@@ -142,3 +142,7 @@ class Miner(Network):
         self.block = Block(self.transactions, self.newBlockIndex, self.previousBlockHash)
         self.mine()
 ```
+
+## An image of Gisel library cus why not
+---
+![Image](https://images.app.goo.gl/5Hco6X5uPCkH7JoF7)
