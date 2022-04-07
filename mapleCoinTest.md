@@ -16,7 +16,7 @@ Maple Coin is a breath of fresh air in the world of cryptocurrencies. It is comm
 
 ## Inspiration
 ---
-This project is heavily inspired by Blockchain at Berkeley and the YouTube channel 3Blue1Brown.
+This project is heavily inspired by `Blockchain at Berkeley` and the YouTube channel `3Blue1Brown`.
 
 The following lecture materials and video are the sole sources of the foundation of this project:
 
