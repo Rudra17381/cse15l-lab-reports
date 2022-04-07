@@ -8,7 +8,7 @@ Maple Coin is an innovative perspective on currency. It is a fully digital curre
 
 ## What is a cryptocurrency? Why use it?
 ---
-Cryptocurrency is a digital currency that is not controlled by any single entity such as a government or a bank. It roams free of every border and is built upon and maintained by clever mathematical ideas and algorithms, making it practically impossible and theoretically implausible to break. It is free of the risk of any corruption, which is a possibility in currencies governed by a single body like a government and is instead controlled by the people using it, making it the most secure form of currency.
+*Cryptocurrency is a digital currency that is not controlled by any single entity such as a government or a bank*. It roams free of every border and is built upon and maintained by **clever mathematical ideas** and **algorithms**, making it practically impossible and theoretically implausible to break. It is free of the risk of any corruption, which is a possibility in currencies governed by a single body like a government and is instead controlled by the people using it, making it the most secure form of currency.
 
 A cryptocurrency gives its users the peace of mind of their money being safe as there is no being behind it; it's all just mathematics! It also provides an easy outlet for people to invest in and contribute to the growth of this revolutionary technology. Cryptocurrencies are the people's currencies, and hence they have a bright future ahead of them where they might soon be replacing physical currencies forever and for good.
 
