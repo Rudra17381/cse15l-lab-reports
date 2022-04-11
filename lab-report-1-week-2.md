@@ -14,7 +14,7 @@ First we need to download visual studio code from the link given below.
 It should look something like this:
 ![installingVSCode](Images/report1/1installingVSCode.jpg)
 
-#### Installing VS Code
+### Installing VS Code
 Double click the downloaded file and follow the instructions to install visual studio code on your local computer
 
 ## Remotely Connecting
@@ -49,7 +49,7 @@ Follow these steps to remotely connect to the server
 There are many easy to learn commands that can help you navigate the host computer and use it as if its your own computer. These are command line commands so they are slightly different that the GUI interface of your computer that you may be used to but it should not be too difficult to pick up.
 Note that these commands can be used on your own local computer as well.
 
-#### Some Example Commands:
+### Some Example Commands:
 * ```cd```: This command helps you change the current directory that you are in.
 * ```ls```: This command lists out all the files in the current directory.
 * ```pwd```: This command prints out the whole path from the root directory to the current directory.
@@ -59,7 +59,7 @@ Note that these commands can be used on your own local computer as well.
 * ```-a```: This is sorta like a modifier, with ```ls``` it lists out all files and directories wether they are hidden or not.
 * ```-t```: This is sorta like a modifier, with ```ls``` it lists out all the files sorted by the time of last modification.
 
-#### Try running some useful commands and seeing their output (Used from Lab1):
+### Try running some useful commands and seeing their output (Used from Lab1):
 * ```cd ~```: Should change your current directory to home directory.
 * ```cd "child directory"```: Should change your current directory to one of its children.
 * ```ls -lat```: Should list out all the files in the current directory in long format regardless of wether they are hidden or not. These files should be sorted by the date they were last modified. Notice how ```-lat``` is a combination of ```-l``` ```-a``` and ```-t```.
@@ -69,10 +69,10 @@ Note that these commands can be used on your own local computer as well.
 
 **Press ```Ctrl + D``` or Run the ```exit``` command to exit the terminal.**
 
-#### Running Some Commands on a Local Client PC:
+### Running Some Commands on a Local Client PC:
 ![tryingSomeCommandsOnClientPC](Images/report1/3tryingSomeCommandsOnClientPC.jpg)
 
-#### Running Some Commands on Remote Host UCSD Server:
+### Running Some Commands on Remote Host UCSD Server:
 ![tryingSomeCommandsOnRemotePC](Images/report1/3tryingSomeCommandsOnRemotePC.jpg)
 
 ## Moving Files with ```scp```
@@ -87,7 +87,7 @@ Whatever the reason may be, it is important to learn how to move files over ```s
 
 Note: The command ```scp``` is always run from the client and not from the host.
 
-#### A program to print current location (Used from Lab1):
+### A program to print current location (Used from Lab1):
 Install Java on your computer using the following tutorial and create a file called ```WhereAmI.java``` and paste the following code into it.
 
 * [Installing Java Windows](https://phoenixnap.com/kb/install-java-windows)  
@@ -111,10 +111,10 @@ class WhereAmI {
 
 Doing so will give you the path to the current directory easily.  
 
-#### Running the Program on a Local Client PC:
+### Running the Program on a Local Client PC:
 ![RunningWhereAmILocally](Images/report1/4RunningWhereAmILocally.jpg)
 
-#### Moving the ```Where Am I.java``` Program to the Remote Server Using ```scp```(Used from Lab1):
+### Moving the ```Where Am I.java``` Program to the Remote Server Using ```scp```(Used from Lab1):
 Go to the terminal and run the following command ```scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/``` where ```zz``` is your course specific account name.
 
 Your file should now be copied to the remote server on the course specific account that you have. Use the ```ls``` command to view all files in the current directory and ensure that ```WhereAmI.java``` is there.  
@@ -124,7 +124,7 @@ Java is already installed on these servers so you can use ```javac``` and ```jav
 
 ![MovingWhereAmIToRemoteHostUsingscp](Images/report1/4MovingWhereAmIToRemoteHostUsingscp.jpg)
 
-#### Running the Program on Remote Host UCSD Server:
+### Running the Program on Remote Host UCSD Server:
 ![RunningWhereAmIRemotely](Images/report1/4RunningWhereAmIRemotely.jpg)
 
 ## Setting an SSH Key
@@ -136,7 +136,7 @@ Typing your password every time to log into the server for every little thing ca
 
 **```ssh``` keys help us accomplish this goal.** ```ssh-keygen``` is the program that creates the pair of asymmetric keys. One key is copied to the remote host server meanwhile the other key is kept by your local client computer.
 
-#### Here are the steps for setting up your own ```ssh``` keys:
+### Here are the steps for setting up your own ```ssh``` keys:
 * On the client computer.
 1. Run ```ssh-keygen```
 2. Enter ```/Users/<user-name>/.ssh/id_rsa```
@@ -172,7 +172,7 @@ These steps should've created two different files on your local client pc, one n
 
 Now that we have created the pair of asymmetric keys, we need to copy the public key to the remote host server that we have.
 
-#### To do so, follow the steps below: (Used from Lab1)
+### To do so, follow the steps below: (Used from Lab1)
 1. Log into the remote host server. Here ```zz``` is your course specific account.
 ```ssh cs15lsp22zz@ieng6.ucsd.edu``` 
 2. Make a new empty directory to keep the RSA public key.
@@ -191,7 +191,7 @@ Done! You should now be able to ```ssh``` or ```scp``` without having to type in
 2. You can run multiple commands in one line using ```;``` semicolons. For example:
 ```cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI```
 
-#### Example of Optimized Remote Running
+### Example of Optimized Remote Running
 
 ![compressedMultipleCommands](Images/report1/6compressedMultipleCommands.jpg)
 
