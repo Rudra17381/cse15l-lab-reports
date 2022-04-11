@@ -140,29 +140,29 @@ Typing your password every time to log into the server for every little thing ca
 2. Enter ```/Users/<user-name>/.ssh/id_rsa```
 3. Do not add a passphrase here.
 4. It should look something like this:
-> ```
-> rudrarupani@Rudras-MacBook-Pro cse15l-lab-reports % ssh-keygen
-> Generating public/private rsa key pair.
-> Enter file in which to save the key (/Users/rudrarupani/.ssh/id_rsa): /Users/rudrarupani/.ssh/id_rsa
-> Enter passphrase (empty for no passphrase): 
-> Enter same passphrase again: 
-> Your identification has been saved in /Users/rudrarupani/.ssh/id_rsa
-> Your public key has been saved in /Users/rudrarupani/.ssh/id_rsa.pub
-> The key fingerprint is:
-> SHA256:fTLFxwPuCxa9Qp5LrIwkR3zQ9ZWa206/r6VstPNjz9s rudrarupani@Rudras-MacBook-Pro.local
-> The key's randomart image is:
-> +---[RSA 3072]----+
-> |       .. .. .ooo|
-> |      . ..  +..+.|
-> |       o . o ++ .|
-> |      . ..+ +=.  |
-> |     . oS .O*o   |
-> |      + o +o++.  |
-> |       . o .+... |
-> |           ..=o+.|
-> |            o*B+E|
-> +----[SHA256]-----+
-> ```
+```
+rudrarupani@Rudras-MacBook-Pro cse15l-lab-reports % ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/rudrarupani/.ssh/id_rsa): /Users/rudrarupani/.ssh/id_rsa
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/rudrarupani/.ssh/id_rsa
+Your public key has been saved in /Users/rudrarupani/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:fTLFxwPuCxa9Qp5LrIwkR3zQ9ZWa206/r6VstPNjz9s rudrarupani@Rudras-MacBook-Pro.local
+The key's randomart image is:
++---[RSA 3072]----+
+|       .. .. .ooo|
+|      . ..  +..+.|
+|       o . o ++ .|
+|      . ..+ +=.  |
+|     . oS .O*o   |
+|      + o +o++.  |
+|       . o .+... |
+|           ..=o+.|
+|            o*B+E|
++----[SHA256]-----+
+```
 
 ![SettingUpSSHKeys](Images/report1/5SettingUpSSHKeys.jpg)
 
@@ -172,12 +172,12 @@ Now that we have created the pair of asymmetric keys, we need to copy the public
 
 #### To do so, follow the steps below: (taken from Lab 1)
 1. Log into the remote host server. Here ```zz``` is your course specific account.
-> ```ssh cs15lsp22zz@ieng6.ucsd.edu``` 
+```ssh cs15lsp22zz@ieng6.ucsd.edu``` 
 2. Make a new empty directory to keep the RSA public key.
-> ```mkdir .ssh```
+```mkdir .ssh```
 3. Log out from the remote host server.
 4. Copy the public key over ```ssh``` using ```scp``` from your local client computer to the remote host server. Here ```<user-name>``` is your user name and ```zz``` is your course specific account
-> ```scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys```
+```scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys```
 
 Done! You should now be able to ```ssh``` or ```scp``` without having to type in your password.
 
@@ -185,9 +185,9 @@ Done! You should now be able to ```ssh``` or ```scp``` without having to type in
 ---
 
 1. You can run commands directly in one line using ```""``` double qoutes. The following command will list out all files in the remote directory.
-> ```ssh cs15lsp22zz@ieng6.ucsd.edu "ls"```
+```ssh cs15lsp22zz@ieng6.ucsd.edu "ls"```
 2. You can run multiple commands in one line using ```;``` semicolons. For example:
-> ```cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI```
+```cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI```
 
 #### Example of Optimized Remote Running
 
