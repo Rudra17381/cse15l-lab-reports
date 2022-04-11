@@ -10,7 +10,7 @@ First we need to download visual studio code from the link given below.
 > [Download Visual Studio Code](https://code.visualstudio.com)
 
 It should look something like this:
-![img](dndd)
+![installingVSCode](Images/report1/1installingVSCode.jpg)
 
 #### Installing VS Code
 Double click the downloaded file and follow the instructions to install visual studio code on your local computer
@@ -36,8 +36,10 @@ Follow these steps to remotely connect to the server
         * ```zz``` is your course specific account name
     ```ieng6.ucsd.edu``` is the host name where we will be connecting to.
     * Connecting to it the first time you should see the following message  
-    ![img](difnidnf)
-    * Your client PC is now connected to a host UCSD server computer.
+    ![establishingConnectionToRemoteHostFirstTime](Images/report1/2establishingConnectionToRemoteHostFirstTime.jpg)
+    * Your client PC is now connected to a host UCSD server computer and it should look something like this.  
+    ![afterSuccessfullyEstablishingConnection](Images/report1/2afterSuccessfullyEstablishingConnection.jpg)
+
 
 ## Trying Some Commands
 ---
@@ -64,6 +66,12 @@ Note that these commands can be used on your own local computer as well.
 * ```cat /home/linux/ieng6/cs15lsp22/public/hello.txt```: Should print out the contents of ```hello.txt```.
 
 **Press ```Ctrl + D``` or Run the ```exit``` command to exit the terminal.**
+
+#### Running Some Commands on a Local Client PC:
+![tryingSomeCommandsOnClientPC](Images/report1/3tryingSomeCommandsOnClientPC.jpg)
+
+#### Running Some Commands on Remote Host UCSD Server:
+![tryingSomeCommandsOnRemotePC](Images/report1/3tryingSomeCommandsOnRemotePC.jpg)
 
 ## Moving Files with ```scp```
 ---
@@ -101,13 +109,21 @@ Code to paste:
 
 Doing so will give you the path to the current directory easily.  
 
-#### Using the program that prints current location (Taken from Lab1):
+#### Running the Program on a Local Client PC:
+![RunningWhereAmILocally](Images/report1/4RunningWhereAmILocally.jpg)
+
+#### Moving the ```Where Am I.java``` Program to the Remote Server Using ```scp```(Taken from Lab1):
 Go to the terminal and run the following command ```scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/``` where ```zz``` is your course specific account name.
 
 Your file should now be copied to the remote server on the course specific account that you have. Use the ```ls``` command to view all files in the current directory and ensure that ```WhereAmI.java``` is there.  
 Java is already installed on these servers so you can use ```javac``` and ```java``` commands to compile and run the file respectively.
 * Compile the file using ```javac```: ```javac WhereAmI.java```  
 * Run the file using ```java```: ```java WhereAmI```
+
+![MovingWhereAmIToRemoteHostUsingscp](Images/report1/4MovingWhereAmIToRemoteHostUsingscp.jpg)
+
+#### Running the Program on Remote Host UCSD Server:
+![RunningWhereAmIRemotely](Images/report1/4RunningWhereAmIRemotely.jpg)
 
 ## Setting an SSH Key
 ---
@@ -148,6 +164,8 @@ Typing your password every time to log into the server for every little thing ca
 > +----[SHA256]-----+
 > ```
 
+![SettingUpSSHKeys](Images/report1/5SettingUpSSHKeys.jpg)
+
 These steps should've created two different files on your local client pc, one named ```id_rsa``` which is the private key and the other named ```id_rsa.pub``` which is the public key. Both of these files are stored in the ```.ssh``` directory of your local client computer.
 
 Now that we have created the pair of asymmetric keys, we need to copy the public key to the remote host server that we have.
@@ -166,7 +184,11 @@ Done! You should now be able to ```ssh``` or ```scp``` without having to type in
 ## Optimizing Remote Running
 ---
 
-1. You can run commands directly in one line using ```""``` qoutes. The following command will list out all files in the remote directory
+1. You can run commands directly in one line using ```""``` double qoutes. The following command will list out all files in the remote directory.
 > ```ssh cs15lsp22zz@ieng6.ucsd.edu "ls"```
 2. You can run multiple commands in one line using ```;``` semicolons. For example:
 > ```cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI```
+
+#### Example of Optimized Remote Running
+
+![compressedMultipleCommands](Images/report1/6compressedMultipleCommands.jpg)
