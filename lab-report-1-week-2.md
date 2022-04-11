@@ -93,16 +93,16 @@ Install Java on your computer using the following tutorial and create a file cal
 * [Installing Java LINUX](https://opensource.com/article/19/11/install-java-linux)
 
 Code to paste:
-> 
-> class WhereAmI {
->  public static void main(String[] args) {
->    System.out.println(System.getProperty("os.name"));
->    System.out.println(System.getProperty("user.name"));
->    System.out.println(System.getProperty("user.home"));
->    System.out.println(System.getProperty("user.dir"));
->  }
->}
->
+```
+class WhereAmI {
+    public static void main(String[] args) {
+        System.out.println(System.getProperty("os.name"));
+        System.out.println(System.getProperty("user.name"));
+        System.out.println(System.getProperty("user.home"));
+        System.out.println(System.getProperty("user.dir"));
+    }
+}
+```
 
 * Compile the file using ```javac```: ```javac WhereAmI.java```  
 * Run the file using ```java```: ```java WhereAmI```
