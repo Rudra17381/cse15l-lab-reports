@@ -85,7 +85,7 @@ Install Java on your computer using the following tutorial and create a file cal
 * [Installing Java LINUX](https://opensource.com/article/19/11/install-java-linux)
 
 Code to paste:
-> ```
+> 
 > class WhereAmI {
 >  public static void main(String[] args) {
 >    System.out.println(System.getProperty("os.name"));
@@ -94,7 +94,7 @@ Code to paste:
 >    System.out.println(System.getProperty("user.dir"));
 >  }
 >}
->```
+>
 
 * Compile the file using ```javac```: ```javac WhereAmI.java```  
 * Run the file using ```java```: ```java WhereAmI```
@@ -133,7 +133,7 @@ Typing your password every time to log into the server for every little thing ca
 > Your identification has been saved in /Users/rudrarupani/.ssh/id_rsa
 > Your public key has been saved in /Users/rudrarupani/.ssh/id_rsa.pub
 > The key fingerprint is:
-> SHA256: ***censored for safety*** rudrarupani@Rudras-MacBook-Pro.local
+> SHA256:fTLFxwPuCxa9Qp5LrIwkR3zQ9ZWa206/r6VstPNjz9s rudrarupani@Rudras-MacBook-Pro.local
 > The key's randomart image is:
 > +---[RSA 3072]----+
 > |       .. .. .ooo|
@@ -170,9 +170,3 @@ Done! You should now be able to ```ssh``` or ```scp``` without having to type in
 > ```ssh cs15lsp22zz@ieng6.ucsd.edu "ls"```
 2. You can run multiple commands in one line using ```;``` semicolons. For example:
 > ```cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI```
-
- 
-
-
-
-
