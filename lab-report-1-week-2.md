@@ -1,6 +1,8 @@
-![Image](https://github.com/Rudra17381/cse15l-lab-reports/blob/c723367ad687ae38a6f2d41ed92e1bda7d0d5d97/95ADA822-49E8-4BD5-A135-7C4889196355.jpeg)
-
 # Lab Report Week 1
+
+[Index Page](https://rudra17381.github.io/cse15l-lab-reports/index.html)
+
+In this week's Lab Report we will learn how to remotely connect to ```ieng6.ucsd.edu``` and run some commands on it.
 
 ## Installing Visual Studio Code
 ---

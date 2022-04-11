@@ -1,16 +1,35 @@
-## All links on the website:
+## Repository:
 ---
-* [index](https://rudra17381.github.io/cse15l-lab-reports/index.html)
-* [lab-report-1-week-2](https://rudra17381.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
-* [mapleCoinTest](https://rudra17381.github.io/cse15l-lab-reports/mapleCoinTest.html)
+* [Repository](https://github.com/Rudra17381/cse15l-lab-reports)
 
-* [index test link 1](lab-report-1-week-2.html)
-* [index test link 2](https://rudra17381.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
-
-## All links in the repository:
+## Lab Reports:
 ---
-* [index.md](https://github.com/Rudra17381/cse15l-lab-reports/blob/bde8668c0f862a5ce06d42d6400f30d221102e37/index.md)
-* [lab-report-1-week-2.md](https://github.com/Rudra17381/cse15l-lab-reports/blob/bde8668c0f862a5ce06d42d6400f30d221102e37/lab-report-1-week-2.md)
-* [mapleCoinTest.md](https://github.com/Rudra17381/cse15l-lab-reports/blob/bde8668c0f862a5ce06d42d6400f30d221102e37/mapleCoinTest.md)
-* [_config.yml](https://github.com/Rudra17381/cse15l-lab-reports/blob/bde8668c0f862a5ce06d42d6400f30d221102e37/_config.yml)
-* [screenshotImage](https://github.com/Rudra17381/cse15l-lab-reports/blob/bde8668c0f862a5ce06d42d6400f30d221102e37/95ADA822-49E8-4BD5-A135-7C4889196355.jpeg)
+* [.](https://github.com/Rudra17381/cse15l-lab-reports)
+* [Lab Report 1](https://rudra17381.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
+## Images:
+---
+* [.](https://github.com/Rudra17381/cse15l-lab-reports/Images)
+* [report1](https://github.com/Rudra17381/cse15l-lab-reports/Images/report1)
+
+## Supporting Files:
+---
+* [.](https://github.com/Rudra17381/cse15l-lab-reports/supportingFiles)
+* [report1](https://github.com/Rudra17381/cse15l-lab-reports/supportingFiles/report1)
+
+## Miscellaneous:
+---
+* [.](https://github.com/Rudra17381/cse15l-lab-reports/miscellaneous)
+* [mapleCoinTest](https://rudra17381.github.io/cse15l-lab-reports/miscellaneous/mapleCoinTest.html)
+
+## All Links:
+---
+* [Index](https://rudra17381.github.io/cse15l-lab-reports/index.html)
+* [Config File](https://rudra17381.github.io/cse15l-lab-reports/_config.yml)
+* [.(Lab Reports)](https://github.com/Rudra17381/cse15l-lab-reports)
+* [.(Images)](https://github.com/Rudra17381/cse15l-lab-reports/Images)
+* [.(supporting Files)](https://github.com/Rudra17381/cse15l-lab-reports/supportingFiles)
+* [Lab Report 1 (Lab Reports)](https://rudra17381.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+* [report1(Images)](https://github.com/Rudra17381/cse15l-lab-reports/Images/report1)
+* [report1(Supporting Files)](https://github.com/Rudra17381/cse15l-lab-reports/supportingFiles/report1)
+* [mapleCoinTest(Miscellaneous)](https://rudra17381.github.io/cse15l-lab-reports/miscellaneous/mapleCoinTest.html)
