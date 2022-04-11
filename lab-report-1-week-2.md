@@ -59,7 +59,7 @@ Note that these commands can be used on your own local computer as well.
 * ```-a```: This is sorta like a modifier, with ```ls``` it lists out all files and directories wether they are hidden or not.
 * ```-t```: This is sorta like a modifier, with ```ls``` it lists out all the files sorted by the time of last modification.
 
-#### Try running some useful commands and seeing their output (Taken from Lab1):
+#### Try running some useful commands and seeing their output (Used from Lab1):
 * ```cd ~```: Should change your current directory to home directory.
 * ```cd "child directory"```: Should change your current directory to one of its children.
 * ```ls -lat```: Should list out all the files in the current directory in long format regardless of wether they are hidden or not. These files should be sorted by the date they were last modified. Notice how ```-lat``` is a combination of ```-l``` ```-a``` and ```-t```.
@@ -87,7 +87,7 @@ Whatever the reason may be, it is important to learn how to move files over ```s
 
 Note: The command ```scp``` is always run from the client and not from the host.
 
-#### A program to print current location (Taken from Lab1):
+#### A program to print current location (Used from Lab1):
 Install Java on your computer using the following tutorial and create a file called ```WhereAmI.java``` and paste the following code into it.
 
 * [Installing Java Windows](https://phoenixnap.com/kb/install-java-windows)  
@@ -114,7 +114,7 @@ Doing so will give you the path to the current directory easily.
 #### Running the Program on a Local Client PC:
 ![RunningWhereAmILocally](Images/report1/4RunningWhereAmILocally.jpg)
 
-#### Moving the ```Where Am I.java``` Program to the Remote Server Using ```scp```(Taken from Lab1):
+#### Moving the ```Where Am I.java``` Program to the Remote Server Using ```scp```(Used from Lab1):
 Go to the terminal and run the following command ```scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/``` where ```zz``` is your course specific account name.
 
 Your file should now be copied to the remote server on the course specific account that you have. Use the ```ls``` command to view all files in the current directory and ensure that ```WhereAmI.java``` is there.  
@@ -172,7 +172,7 @@ These steps should've created two different files on your local client pc, one n
 
 Now that we have created the pair of asymmetric keys, we need to copy the public key to the remote host server that we have.
 
-#### To do so, follow the steps below: (taken from Lab 1)
+#### To do so, follow the steps below: (Used from Lab1)
 1. Log into the remote host server. Here ```zz``` is your course specific account.
 ```ssh cs15lsp22zz@ieng6.ucsd.edu``` 
 2. Make a new empty directory to keep the RSA public key.
