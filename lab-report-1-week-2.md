@@ -194,3 +194,7 @@ Done! You should now be able to ```ssh``` or ```scp``` without having to type in
 #### Example of Optimized Remote Running
 
 ![compressedMultipleCommands](Images/report1/6compressedMultipleCommands.jpg)
+
+## Screenshot from lab work
+---
+![labScreenShot](Images/report1/labSS.jpeg)
