@@ -7,7 +7,7 @@ In this week's Lab Report we will learn how to remotely connect to ```ieng6.ucsd
 ## Installing Visual Studio Code
 ---
 
-#### Downloading VS Code
+### Downloading VS Code
 First we need to download visual studio code from the link given below.
 > [Download Visual Studio Code](https://code.visualstudio.com)
 
