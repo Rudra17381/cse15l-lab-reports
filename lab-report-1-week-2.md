@@ -75,10 +75,101 @@ One usual sitaution you might run into while working on a remote server is needi
 
 Whatever the reason may be, it is important to learn how to move files over ```ssh``` using ```scp```.
 
+Note: The command ```scp``` is always run from the client and not from the host.
 
+#### A program to print current location (Taken from Lab1):
+Install Java on your computer using the following tutorial and create a file called ```WhereAmI.java``` and paste the following code into it.
 
+* [Installing Java Windows](https://phoenixnap.com/kb/install-java-windows)  
+* [Installing Java MacOS](https://www.geeksforgeeks.org/how-to-install-java-on-macos/)  
+* [Installing Java LINUX](https://opensource.com/article/19/11/install-java-linux)
 
+Code to paste:
+> ```
+> class WhereAmI {
+>  public static void main(String[] args) {
+>    System.out.println(System.getProperty("os.name"));
+>    System.out.println(System.getProperty("user.name"));
+>    System.out.println(System.getProperty("user.home"));
+>    System.out.println(System.getProperty("user.dir"));
+>  }
+>}
+>```
 
+* Compile the file using ```javac```: ```javac WhereAmI.java```  
+* Run the file using ```java```: ```java WhereAmI```
+
+Doing so will give you the path to the current directory easily.  
+
+#### Using the program that prints current location (Taken from Lab1):
+Go to the terminal and run the following command ```scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/``` where ```zz``` is your course specific account name.
+
+Your file should now be copied to the remote server on the course specific account that you have. Use the ```ls``` command to view all files in the current directory and ensure that ```WhereAmI.java``` is there.  
+Java is already installed on these servers so you can use ```javac``` and ```java``` commands to compile and run the file respectively.
+* Compile the file using ```javac```: ```javac WhereAmI.java```  
+* Run the file using ```java```: ```java WhereAmI```
+
+## Setting an SSH Key
+---
+
+Typing your password every time to log into the server for every little thing can get annoying. So you may come up with the idea of having the client and host computers recognize each other by default so that you do not have to enter your password to verify your identity. There is just the way to do that using Asymmetric encryption or more specifically RSA (the most widely used asymmetric encryption algorithm)
+
+> [Read up more on fascinating history and mechanics and mathematics behind RSA here](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+
+**```ssh``` keys help us accomplish this goal.** ```ssh-keygen``` is the program that creates the pair of asymmetric keys. One key is copied to the remote host server meanwhile the other key is kept by your local client computer.
+
+#### Here are the steps for setting up your own ```ssh``` keys:
+* On the client computer.
+1. Run ```ssh-keygen```
+2. Enter ```/Users/<user-name>/.ssh/id_rsa```
+3. Do not add a passphrase here.
+4. It should look something like this:
+> ```
+> rudrarupani@Rudras-MacBook-Pro cse15l-lab-reports % ssh-keygen
+> Generating public/private rsa key pair.
+> Enter file in which to save the key (/Users/rudrarupani/.ssh/id_rsa): /Users/rudrarupani/.ssh/id_rsa
+> Enter passphrase (empty for no passphrase): 
+> Enter same passphrase again: 
+> Your identification has been saved in /Users/rudrarupani/.ssh/id_rsa
+> Your public key has been saved in /Users/rudrarupani/.ssh/id_rsa.pub
+> The key fingerprint is:
+> SHA256: ***censored for safety*** rudrarupani@Rudras-MacBook-Pro.local
+> The key's randomart image is:
+> +---[RSA 3072]----+
+> |       .. .. .ooo|
+> |      . ..  +..+.|
+> |       o . o ++ .|
+> |      . ..+ +=.  |
+> |     . oS .O*o   |
+> |      + o +o++.  |
+> |       . o .+... |
+> |           ..=o+.|
+> |            o*B+E|
+> +----[SHA256]-----+
+> ```
+
+These steps should've created two different files on your local client pc, one named ```id_rsa``` which is the private key and the other named ```id_rsa.pub``` which is the public key. Both of these files are stored in the ```.ssh``` directory of your local client computer.
+
+Now that we have created the pair of asymmetric keys, we need to copy the public key to the remote host server that we have.
+
+#### To do so, follow the steps below: (taken from Lab 1)
+1. Log into the remote host server. Here ```zz``` is your course specific account.
+> ```ssh cs15lsp22zz@ieng6.ucsd.edu``` 
+2. Make a new empty directory to keep the RSA public key.
+> ```mkdir .ssh```
+3. Log out from the remote host server.
+4. Copy the public key over ```ssh``` using ```scp``` from your local client computer to the remote host server. Here ```<user-name>``` is your user name and ```zz``` is your course specific account
+> ```scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys```
+
+Done! You should now be able to ```ssh``` or ```scp``` without having to type in your password.
+
+## Optimizing Remote Running
+---
+
+1. You can run commands directly in one line using ```""``` qoutes. The following command will list out all files in the remote directory
+> ```ssh cs15lsp22zz@ieng6.ucsd.edu "ls"```
+2. You can run multiple commands in one line using ```;``` semicolons. For example:
+> ```cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI```
 
  
 
