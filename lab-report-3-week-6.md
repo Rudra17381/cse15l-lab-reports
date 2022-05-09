@@ -42,3 +42,7 @@ Below are screenshots for the lab report and to help you out if you're a little 
 3. Copying files using ```scp file ieng6```
 
 ## Set up Github Access from ieng6
+
+In efforts to increase Security, Github made it so that you need to use a token based login mechanism like SSH keys to log into your github account to be able to commit and push the changes you made to your project instead of just a password
+
+As a matter of fact, if I try to do it right now, you'll see an error
