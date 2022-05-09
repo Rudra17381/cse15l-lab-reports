@@ -45,10 +45,59 @@ Below are screenshots for the lab report and to help you out if you're a little 
 
 In efforts to increase Security, Github made it so that you need to use a token based login mechanism like SSH keys to log into your github account to be able to commit and push the changes you made to your project instead of just a password
 
-As a matter of fact, if I try to do ior
+As a matter of fact, if I try to do it right now, you'll see an error
 
-To set up github access from command line you will need to follow the steps in these two tutorials to set up your SSH key in github and your Personal authentication token. 
+### To set up github access from command line you will need to follow the steps in these two tutorials to set up your SSH key in github and your Personal authentication token. 
 1. [SSH Tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 2. [PAT Tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-Hello World
+### Now we implement the same into our course specific account on the remote server:
+1. log into ```ieng6``` using ```ssh ieng6```
+2. Either transfer already generated keys from local computer to your course specific account using ```scp``` or follow the next step to generate keys locally on the remote server
+3. Use ```ssh-keygen``` command
+    * You should see the following output:
+    ```
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/Users/gerald/.ssh/id_rsa):
+    ```
+    After which you enter in the path to your ssh account + ```.ssh/id_rsa_github```
+    Which will create the new ```ssh``` key in the id_rsa_github file in the hidden folder ```.ssh```
+4. Follow the [SSH Tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) again and insert this new key into your github account
+5. On your course specific account enter the following commands to switch to the proper user:
+    ```
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+    ```
+6. In the .ssh directory, modify the config file and append the following to it
+    ```
+    Host github.com
+     HostName github.com
+     User "your username"
+     IdentityFile ~/.ssh/id_rsa_github
+    ```
+    by either editing it or echoing it using the following command
+    ```
+    echo "Host github.com
+       HostName github.com
+       User Rudra17381
+       IdentityFile ~/.ssh/id_rsa_github" >> config 
+    ```
+8. You can test your connection to github using the following command ```ssh -T git@github.com``` if everything is set up right then you should see your user name pop up
+
+9. Making your local repository remote from HTTPS to SSH
+    1. ```git remote -v``` using the following  command should give an output like this:
+    ```
+    origin  https://github.com/USERNAME/REPOSITORY.git (fetch)       
+    origin  https://github.com/USERNAME/REPOSITORY.git (push)
+    ```
+     This means that currently your remote repository is set to HTTPS, we need to change it to ssh to use the ssh key created previously  
+    2. Use the following command: ```git remote set-url origin git@github.com:USERNAME/REPOSITORY.git```  
+    3. Use the first command again and you should see the following result
+    ```
+    origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
+    origin  git@github.com:USERNAME/REPOSITORY.git (push)
+    ```
+
+10. You are done now! You can perform git operations as normal now using ssh
+
+>>>>>>> Stashed changes
