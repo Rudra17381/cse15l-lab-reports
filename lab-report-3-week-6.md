@@ -100,4 +100,3 @@ As a matter of fact, if I try to do it right now, you'll see an error
 
 10. You are done now! You can perform git operations as normal now using ssh
 
->>>>>>> Stashed changes
