@@ -45,7 +45,7 @@ Below are screenshots for the lab report and to help you out if you're a little 
 
 In efforts to increase Security, Github made it so that you need to use a token based login mechanism like SSH keys to log into your github account to be able to commit and push the changes you made to your project instead of just a password
 
-As a matter of fact, if I try to do it right now, you'll see an error
+As a matter of fact, if I try to do it right now, you'll see an error.
 
 ### To set up github access from command line you will need to follow the steps in these two tutorials to set up your SSH key in github and your Personal authentication token. 
 1. [SSH Tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
@@ -100,3 +100,55 @@ As a matter of fact, if I try to do it right now, you'll see an error
 
 10. You are done now! You can perform git operations as normal now using ssh
 
+## Copying entire directories with ```-scp```
+
+Often there are situations where we may need to copy entire directories over to a remote server. Say for instance a project or the junit files in ```./lib```.
+Copying each file by hand is a cumbersome and tedious task.
+
+Take this directory for example:
+```
+directory
+    file1
+    /subDirectory1
+        file2
+        file3
+    /subDirectory2
+        file4
+        file5
+        file6
+        /subDirectory3
+            file7
+```
+
+Copying this to ieng6 line by line would look something like this:
+```
+ssh ieng6
+mkdir directory
+cd directory
+mkdir subDirectory1
+mkdir subDirectory2
+cd subDirectory2
+mkdir subDirectory3
+exit
+scp file1 ieng6:~/
+scp file2 ieng6:~/directory/subDirectory1
+scp file3 ieng6:~/directory/subDirectory1
+scp file4 ieng6:~/directory/subDirectory2
+scp file5 ieng6:~/directory/subDirectory2
+scp file6 ieng6:~/directory/subDirectory2
+scp file7 ieng6:~/directory/subDirectory2/subDirectory3
+```
+
+That took us a total of 14 lines of commands! just to copy a single directory over which is kinda insane.
+
+Thankfully there is a way to solve this and accomplish the same 14 lines of code with a built in command. 
+
+### To copy an entire directory using scp use the following command:
+```scp -r . ieng6:~/directoryOnRemoteServer```
+
+Here, ```-r``` means recursively go through all the files and directory of-
+```.``` means the current directory we are in. This is also the source of the files so if you want to copy a sub directory then just replace . with the name of the sub directory
+
+Another useful piece of information is filtering what files to copy to do so replace file name or extension with ```*```
+
+For example: ```scp -r *.java *.md ieng6:~/directoryOnRemoteServer``` will copy all the files with the extensions ```.java``` and ```.md```
