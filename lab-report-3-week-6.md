@@ -41,6 +41,16 @@ Below are screenshots for the lab report and to help you out if you're a little 
 
 3. Copying files using ```scp file ieng6```
 
+### Lab report 3 screen shots:
+#### Streamlining ssh Configuration
+1. Show your .ssh/config file, and how you edited it (with VScode, another program, etc)
+![1a](Images/report3/1a.jpg)
+2. Show the ssh command logging you into your account using just the alias you chose.
+![1b](Images/report3/1b.jpg)
+3. Show an scp command copying a file to your account using just the alias you chose.
+![1c](Images/report3/1c.jpg)
+
+
 ## Set up Github Access from ieng6
 
 In efforts to increase Security, Github made it so that you need to use a token based login mechanism like SSH keys to log into your github account to be able to commit and push the changes you made to your project instead of just a password
@@ -100,6 +110,17 @@ As a matter of fact, if I try to do it right now, you'll see an error.
 
 10. You are done now! You can perform git operations as normal now using ssh
 
+### Lab report 3 screen shots:
+1. Show where the public key you made is stored on Github and in your user account (screenshot).
+![2a](Images/report3/2a.jpg)
+2. Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
+![2b](Images/report3/2b.jpg)
+3. Show running git commands to commit and push a change to Github while logged into your ieng6 account.
+![2c](Images/report3/2c.jpg)
+3. Show a link for the resulting commit.  
+[https://github.com/Rudra17381/cse15l-lab-reports/commit/b4ffb66a9a849a63cfcd07dcf5bcf8b7dbe4a274](https://github.com/Rudra17381/cse15l-lab-reports/commit/b4ffb66a9a849a63cfcd07dcf5bcf8b7dbe4a274)
+
+
 ## Copying entire directories with ```-scp```
 
 Often there are situations where we may need to copy entire directories over to a remote server. Say for instance a project or the junit files in ```./lib```.
@@ -152,3 +173,12 @@ Here, ```-r``` means recursively go through all the files and directory of-
 Another useful piece of information is filtering what files to copy to do so replace file name or extension with ```*```
 
 For example: ```scp -r *.java *.md ieng6:~/directoryOnRemoteServer``` will copy all the files with the extensions ```.java``` and ```.md```
+
+### Lab report 3 screen shots:
+1. Show copying your whole markdown-parse directory to your ieng6 account.
+![3a](Images/report3/3a1.jpg)
+![3b](Images/report3/3a2.jpg)
+2. Show logging into your ieng6 account after doing this and compiling and running the tests for your repository.
+![3b](Images/report3/3b.jpg)
+3. Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
+![3c](Images/report3/3c.jpg)
